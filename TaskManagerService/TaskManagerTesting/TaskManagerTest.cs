@@ -14,7 +14,7 @@ namespace TaskManagerTesting
             TaskManagerController ctrl = new TaskManagerController();
 
             TaskDetailsModel task = new TaskDetailsModel();
-            task.TaskName = "Task2";
+            task.TaskName = "Task2500";
             task.StartDate = DateTime.Now;
             task.EndDate = DateTime.Now.AddDays(15);
             task.IsEnded = false;
@@ -37,7 +37,7 @@ namespace TaskManagerTesting
 
             TaskDetailsModel task = new TaskDetailsModel();
             task.TaskId = 2;
-            task.TaskName = "Task2";
+            task.TaskName = "Task2499";
             task.StartDate = DateTime.Now;
             task.EndDate = DateTime.Now.AddDays(30);
             task.ParentTaskName = "Parent Task5";
