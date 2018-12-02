@@ -55,7 +55,8 @@ namespace TaskManagerDataAccess
 
         public List<TaskDetailsModel> ViewTask(TaskDetailsModel task = null)
         {
-            List<TaskDetailsModel> objTaskDetailslist = new List<TaskDetailsModel>();			
+            List<TaskDetailsModel> objTaskDetailslist = new List<TaskDetailsModel>();
+            
             using (SqlConnection sqlconn = new SqlConnection(m_connectionString))
             {
                 using (SqlCommand sqlCommand = new SqlCommand(c_GetTask, sqlconn))
